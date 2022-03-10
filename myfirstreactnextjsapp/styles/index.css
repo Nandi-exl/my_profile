@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+}
+
+html {
+  background-color: rgb(128, 128, 128, 0.2);
+}
+body {
+  min-height: 1000vh;
+  max-width: 600px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0px 5px 20px rgb(128, 128, 128, 0.5);
+}
