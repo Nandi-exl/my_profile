@@ -2,6 +2,7 @@ import tw from 'tailwind-styled-components'
 import Image from "next/image"
 import GithubImg from "../../FIles/github-sign.png"
 import Linkedin from "../../Files/linkedin.png"
+import EmailImg from "../../Files/email.png"
 
 const Cards = tw.div`
 relative
@@ -9,13 +10,13 @@ z-0
 hidden
 md:block
 w-[120px]
-h-[200px]
-absolute
+h-[170px]
 border-4
 border-white
 rounded-lg
 bg-white
-mt-[5rem]
+fixed
+top-[5rem]
 drop-shadow-lg
 `;
 
@@ -44,7 +45,7 @@ flex
 text-center
 justify-center
 items-center
-mt-[1px]
+mt-[5px]
 cursor-pointer
 space-x-2
 `;
@@ -70,12 +71,13 @@ const Card = () => {
       <SocialAndContact>
         <SocialContactImage>
           <Image src={GithubImg} />
-          
         </SocialContactImage>
         <SocialContactImage>
           <Image src={Linkedin} />
         </SocialContactImage>
-        {/* <Image src={} /> */}
+        <SocialContactImage>
+          <Image src={EmailImg} />
+        </SocialContactImage>
       </SocialAndContact>    
 
      </Cards>

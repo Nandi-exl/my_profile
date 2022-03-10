@@ -16,6 +16,7 @@ md:top-3.5
 md:absolute
 md:ml-[4%]
 xl:ml-[2%]
+sticky
 `;
 
 
