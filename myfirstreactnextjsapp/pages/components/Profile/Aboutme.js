@@ -1,9 +1,19 @@
+import Intro from "./intro/Intro";
+import Experience from "./Experience/Experience";
+import tw from "tailwind-styled-components";
 
-
+const Container = tw.div`
+flex-col
+`;
 
 const aboutme = () => {
   return (
-    <div>aboutme</div>
+    <>
+    <Container>
+      <Intro />
+      <Experience />
+    </Container>
+    </>
   )
 }
 

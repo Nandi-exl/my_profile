@@ -68,7 +68,7 @@ const Card = () => {
        </Name>
 
        <JobTittle>
-         <p> Programer & Digital Marketing </p> 
+         <p> Software Engineer & Digital Marketing </p> 
        </JobTittle>
 
       <SocialAndContact>

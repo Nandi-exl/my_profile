@@ -24,6 +24,12 @@ absolute
 mt-[-0.32rem]
 `;
 
+const AboutMeContainer = tw.div`
+flex
+w-[27rem]
+justify-center
+`;
+
 export default function Home() {
   return (
     <div>
@@ -35,8 +41,10 @@ export default function Home() {
         <Profile />
       
         <Container>
-        <ProfileContainer />
-        <Aboutme />
+          <ProfileContainer />
+          <AboutMeContainer>
+            <Aboutme />
+          </AboutMeContainer>
         </Container>
     </div>
   )
