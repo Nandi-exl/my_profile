@@ -1,8 +1,11 @@
 import tw from 'tailwind-styled-components'
 import Image from "next/image"
+import Link from 'next/link'
+
 import GithubImg from "../../FIles/github-sign.png"
 import Linkedin from "../../Files/linkedin.png"
 import EmailImg from "../../Files/email.png"
+
 
 const Cards = tw.div`
 relative
@@ -46,14 +49,14 @@ text-center
 justify-center
 items-center
 mt-[5px]
-cursor-pointer
-space-x-2
+space-x-4
 `;
 
 const SocialContactImage = tw.div`
 flex
 w-[20px]
 mt-[10px]
+cursor-pointer
 `;
 
 const Card = () => {
@@ -70,13 +73,19 @@ const Card = () => {
 
       <SocialAndContact>
         <SocialContactImage>
-          <Image src={GithubImg} />
+          <a href="https://github.com/Nandi-exl" target="_blank">
+            <Image src={GithubImg} />
+          </a>
         </SocialContactImage>
         <SocialContactImage>
+          <a href="https://www.linkedin.com/in/nandi-naulfaldy-6b0a20143/" target="_blank">
           <Image src={Linkedin} />
+          </a>
         </SocialContactImage>
         <SocialContactImage>
+          <a href="mailto:nandinaufaldi@gmail.com">
           <Image src={EmailImg} />
+          </a>
         </SocialContactImage>
       </SocialAndContact>    
 

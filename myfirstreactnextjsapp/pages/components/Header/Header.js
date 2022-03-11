@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <>
         <Container>    
-        <Menu>Test</Menu>
+        <Menu></Menu>
         <BackgroundImage>
            <Image src={bgImage} alt="backgroundImage"/>
         </BackgroundImage> 
