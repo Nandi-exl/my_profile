@@ -21,7 +21,7 @@ t-0
 r-0
 z-1
 absolute
-mt-[-0.32rem]
+mt-[-0.35rem]
 `;
 
 const AboutMeContainer = tw.div`
