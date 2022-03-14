@@ -1,25 +1,61 @@
 import Image from "next/image"
+import React, {useState} from "react";
+import Slider  from "react-slick";
+
+import arRight from "../../Files/arrow-right.png";
+import arLeft from "../../Files/arrow-left.png"
+
+import Kompas from "../../Files/experience/KompasG.png";
+import Rli from "../../Files/experience/Rli.png";
+import Smt from "../../Files/experience/smt.png";
+import Mfk from "../../Files/experience/mfk.png";
+import Bumi from "../../Files/experience/bumi.png";
+import Toffin from "../../Files/experience/toffin.png";
+
+
+const ExpImages = [Kompas, Rli, Smt, Mfk, Bumi, Toffin];
 
 function SliderExperience() {
+  const [imageIndex, setImageIndex] = useState(0)
+
+  const NextArrow = ({onClick}) => {
+    return (
+      <div className="arrow next" onClick={onClick}>
+          <arRight />
+      </div>
+    )
+  }
+
+  const PrevArrow = ({onClick}) => {
+    return (
+      <div className="arrow prev" onClick={onClick}>
+          <arLeft />
+      </div>
+    )
+  }
+
+  const setting = {
+    infinity : true,
+    lazyLoad : true,
+    speed : 300,
+    slideShow : 3,
+    centerMode : true,
+    centerPadding : 0,
+    nextArrow : <NextArrow />,
+    prevArrow : <PrevArrow />
+  };
+
+
+
   return (
-    <div class="container">
-        <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
-        <div class="cards-wrapper">
-            <ul class="cards__container">
-                <li class="box" style="background-color:red">box 1</li>
-                <li class="box">box 2</li>
-                <li class="box">box 3</li>
-                <li class="box">box 4</li>
-                <li class="box">box 5</li>
-                <li class="box box--hide">box 6</li>
-                <li class="box box--hide">box 7</li>
-            </ul>
-            <div class="card__text-content">
-                <h3 class="card__title">The Famous Five</h3>
-                <div class="card__summary">The Famous Five is a series of children's adventure novels written by English author Enid Blyton. The first book, Five on a Treasure Island, was published in 1942.</div>
-            </div>
+    <div>
+    <Slider {...setting}>
+      {ExpImages.map((image, index) => {
+        <div>
+          <Image src={image} alt={image} />
         </div>
-        <div class="button" onclick="shiftRight()"> <Image src={}> </div>
+      })}
+    </Slider>
     </div>
   )
 }
