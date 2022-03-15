@@ -4,13 +4,15 @@ import tw from "tailwind-styled-components";
 
 const Container = tw.div`
 flex=column
-h-[100px]
+h-[40px]
 justify-center
 font-["poppins"]
 `;
 
 const Title = tw.div`
 font-medium
+text-center
+mb-[1rem]
 `;
 
 const Experience = () => {
@@ -20,8 +22,8 @@ const Experience = () => {
         <Title>
             <div>Experience</div>
         </Title>
-    </Container>
         <SliderExperience />
+    </Container>
     </>
   )
 }

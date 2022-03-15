@@ -1,35 +1,54 @@
-
-
 .img {
   width: 350px;
   margin: 0 auto;
 }
 
 .slide {
-    transform: scale(0.5);
-    transition: transform 300ms;
-    opacity: 0.5;
+  transform: scale(0.5);
+  transition: transform 300ms;
+  opacity: 0.5;
 }
 
 .activeSlide {
-    transform: scale(1.5);
-    opacity: 1;
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 .arrowsR {
-    width: 10px;
-    position: absolute;
-    background-color: white;
-    z-index: 1;
-    right: 0%;
-    top: 30%;
+  width: 20px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  right: 0%;
+  top: 30%;
+  cursor: pointer;
 }
 
 .arrowsL {
-    width: 10px;
-    position: absolute;
-    background-color: white;
-    z-index: 1;
-    left: 0%;
-    top: 30%;
+  width: 20px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  left: 0%;
+  top: 30%;
+  cursor: pointer;
+}
+
+.arrowsR:hover {
+  color: blanchedalmond;
+}
+
+.arrowsL:hover {
+  color: blanchedalmond;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-size: 7px;
+}
+
+.posisi {
+  font-family: 'Poppins';
+  font-size: 7px;
+  padding-bottom: 1rem;
 }
