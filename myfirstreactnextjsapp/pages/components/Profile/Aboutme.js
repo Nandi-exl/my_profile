@@ -1,5 +1,7 @@
 import Intro from "./intro/Intro";
 import Experience from "./Experience/Experience";
+import Skill from "./skills/Skill";
+
 import tw from "tailwind-styled-components";
 
 const Container = tw.div`
@@ -12,6 +14,7 @@ const aboutme = () => {
     <Container>
       <Intro />
       <Experience />
+      <Skill />
     </Container>
     </>
   )

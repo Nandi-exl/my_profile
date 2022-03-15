@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Profile from './components/Header/Profile'
 import tw from 'tailwind-styled-components';
 import Aboutme from "./components/Profile/Aboutme.js"
+import Message from './components/message/Message';
 
 const ProfileContainer = tw.div`
 w-[11rem]
@@ -15,7 +16,7 @@ z-2
 const Container = tw.div`
 flex
 w-[600px]
-h-[76.5%]
+h-[100%]
 bg-white
 t-0
 r-0
@@ -41,7 +42,10 @@ export default function Home() {
         <Profile />
       
         <Container>
-          <ProfileContainer />
+          <ProfileContainer>
+            <Message />
+          </ProfileContainer>
+
           <AboutMeContainer>
             <Aboutme />
           </AboutMeContainer>
