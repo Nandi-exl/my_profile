@@ -15,12 +15,14 @@ font-medium
 
 const Experience = () => {
   return (
+    <>
     <Container>
         <Title>
             <div>Experience</div>
         </Title>
-        <SliderExperience />
     </Container>
+        <SliderExperience />
+    </>
   )
 }
 
