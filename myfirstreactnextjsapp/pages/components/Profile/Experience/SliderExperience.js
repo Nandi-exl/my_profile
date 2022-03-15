@@ -17,44 +17,48 @@ import Toffin from "../../Files/experience/toffin.png";
 
 
 
+const ExpImages = [Kompas, Rli, Smt, Mfk, Bumi, Toffin];
 const SliderExperience = () => {
-    const ExpImages = [Kompas, Rli, Smt, Mfk, Bumi, Toffin];
 
-    const [imageIndex, setImageIndex] = useState(0)
-    const NextArrow = ({onClick}) => {
+  
+  const NextArrow = ({onClick}) => {
     return (
-      <div className="arrow next" onClick={onClick}>
-          <arRight />
-      </div>
-    )
-  }
-
-  const PrevArrow = ({onClick}) => {
-    return (
-      <div className="arrow prev" onClick={onClick}>
-          <arLeft />
+      <div className={ExpStyles.arrowsR} onClick={onClick}>
+         <Image src={arRight} />
       </div>
     )
   }
   
-    const settings = {
-      infinite : true,
-      lazyLoad : true,
-      speed : 300,
-      slidesToShow : 3,
-      centerMode : true,
-      centerPadding : 0,
-      nextArrow : <NextArrow />,
-      prevArrow : <PrevArrow />
-    }
-    
-    
-    
+  const PrevArrow = ({onClick}) => {
+    return (
+      <div className={ExpStyles.arrowsL} onClick={onClick}>
+         <Image src={arLeft} />
+      </div>
+    )
+  }
+
+  const [imageIndex, setImageIndex] = useState(0)
+  
+  const settings = {
+    infinite : true,
+    lazyLoad : true,
+    speed : 300,
+    slidesToShow : 3,
+    centerMode : true,
+    centerPadding : 0,
+    nextArrow : <NextArrow />,
+    prevArrow : <PrevArrow />,
+    beforeChange : (current, next) => setImageIndex(next)
+  }
+  
+
+  
+  
     return (
     <div className={ExpStyles}>
       <Slider {...settings} className={ExpStyles.img}>
         {ExpImages.map((image, idx) => (
-          <div key={idx}>
+          <div className={idx === imageIndex ? ExpStyles.activeSlide : ExpStyles.slide}>
             <Image src={image} />
           </div>    
         ))}

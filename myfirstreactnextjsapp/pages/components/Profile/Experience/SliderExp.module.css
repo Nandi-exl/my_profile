@@ -1,3 +1,35 @@
+
+
 .img {
   width: 350px;
+  margin: 0 auto;
+}
+
+.slide {
+    transform: scale(0.5);
+    transition: transform 300ms;
+    opacity: 0.5;
+}
+
+.activeSlide {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.arrowsR {
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    right: 0%;
+    top: 30%;
+}
+
+.arrowsL {
+    width: 10px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    left: 0%;
+    top: 30%;
 }
