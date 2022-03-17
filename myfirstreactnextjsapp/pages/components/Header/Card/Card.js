@@ -73,12 +73,12 @@ const Card = () => {
 
       <SocialAndContact>
         <SocialContactImage>
-          <a href="https://github.com/Nandi-exl" target="_blank">
+          <a href="https://github.com/Nandi-exl">
             <Image src={GithubImg} />
           </a>
         </SocialContactImage>
         <SocialContactImage>
-          <a href="https://www.linkedin.com/in/nandi-naulfaldy-6b0a20143/" target="_blank">
+          <a href="https://www.linkedin.com/in/nandi-naulfaldy-6b0a20143/">
           <Image src={Linkedin} />
           </a>
         </SocialContactImage>

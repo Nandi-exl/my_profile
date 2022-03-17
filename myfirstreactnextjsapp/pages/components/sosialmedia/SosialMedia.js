@@ -20,12 +20,15 @@ cursor-pointer
 
 
 const Images = [{
+  id : 0,
   image : GithubImg,
   link : "https://github.com/Nandi-exl"
 },{
+  id : 1,
   image : Linkedin,
   link : "https://www.linkedin.com/in/nandi-naulfaldy-6b0a20143/"
 },{
+  id : 2,
   image : EmailImg,
   link : "mailto:nandinaufaldi@gmail.com"
 }]
@@ -34,10 +37,10 @@ const SosialMedia = () => {
     <>
      <Container>
         {Images.map((i) => {
-         const {image, link} = i;
+         const {image, link, id} = i;
           return (
-            <ImgContainer>
-              <a href={link}  target="_blank">
+            <ImgContainer key={id}>
+              <a href={link} >
                 <Image src={image}/>
               </a>
           </ImgContainer>
