@@ -4,6 +4,9 @@ import Profile from './components/Header/Profile'
 import tw from 'tailwind-styled-components';
 import Aboutme from "./components/Profile/Aboutme.js"
 import Message from './components/message/Message';
+import Mobile from "./mobile"
+
+import { useMediaQuery } from "react-responsive";
 
 const ProfileContainer = tw.div`
 w-[11rem]
@@ -14,16 +17,16 @@ z-2
 `;
 
 const Container = tw.div`
-flex
 w-[600px]
-h-[100%]
 bg-white
 t-0
 r-0
 z-1
 absolute
 mt-[-0.35rem]
+flex
 `;
+
 
 const AboutMeContainer = tw.div`
 flex
@@ -32,6 +35,15 @@ justify-center
 `;
 
 export default function Home() {
+
+const isDekstop = useMediaQuery({
+    query: '(min-width: 600px)'
+  })
+
+const isMobile = useMediaQuery({
+  query: '(max-width: 599px)'
+})
+
   return (
     <div>
       <Head>
@@ -40,8 +52,9 @@ export default function Home() {
    
         <Header  />
         <Profile />
-      
-        <Container>
+
+        {isDekstop &&
+        <Container >
           <ProfileContainer>
             <Message />
           </ProfileContainer>
@@ -50,6 +63,9 @@ export default function Home() {
             <Aboutme />
           </AboutMeContainer>
         </Container>
+        }
+
+        {isMobile && <Mobile/>}
     </div>
   )
 }

@@ -5,7 +5,6 @@ import SkillStyle from "./skill.module.css"
 
 import { SkillsData } from "./SkillsData";
 
-console.log(SkillsData)
 const Container = tw.div`
 flex-col
 justify-center
