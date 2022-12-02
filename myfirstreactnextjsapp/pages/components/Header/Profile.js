@@ -1,11 +1,10 @@
-import React from 'react'
-import tw from 'tailwind-styled-components'
-import ProfileImg from '../Files/profileimg.png'
-import BgImage from '../Files/background.PNG'
-import Image from 'next/image'
+import React from 'react';
+import tw from 'tailwind-styled-components';
+import ProfileImg from '../../../Files/profileimg.png';
+import BgImage from '../../../Files/background.PNG';
+import Image from 'next/image';
 
-import Card from './Card/Card'
-
+import Card from './Card/Card';
 
 const Container = tw.div`
 flex
@@ -18,8 +17,6 @@ md:ml-[4%]
 xl:ml-[2%]
 sticky
 `;
-
-
 
 const BackgroundImage = tw.div`
 z-0
@@ -43,17 +40,17 @@ absolute
 const Profile = () => {
   return (
     <>
-    <Container>
-    <BackgroundImage>
-      <Image src={BgImage} />
-    </BackgroundImage>
-    <ProfileImage>
-        <Image className='rounded-full' src = {ProfileImg} alt= "profileimg" />
-    </ProfileImage>
-    <Card />
-    </Container>
+      <Container>
+        <BackgroundImage>
+          <Image src={BgImage} />
+        </BackgroundImage>
+        <ProfileImage>
+          <Image className='rounded-full' src={ProfileImg} alt='profileimg' />
+        </ProfileImage>
+        <Card />
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

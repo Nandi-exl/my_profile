@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import SkillStyle from './skill.module.css';
 
-import { SkillsData } from './SkillsData';
+import { SkillsData } from '../../../../Files/js/SkillsData';
 
 const Container = tw.div`
 flex-col

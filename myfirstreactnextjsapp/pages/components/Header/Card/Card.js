@@ -1,11 +1,10 @@
-import tw from 'tailwind-styled-components'
-import Image from "next/image"
-import Link from 'next/link'
+import tw from 'tailwind-styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import GithubImg from "../../FIles/github-sign.png"
-import Linkedin from "../../Files/linkedin.png"
-import EmailImg from "../../Files/email.png"
-
+import GithubImg from '../../../../FIles/github-sign.png';
+import Linkedin from '../../../../Files/linkedin.png';
+import EmailImg from '../../../../Files/email.png';
 
 const Cards = tw.div`
 relative
@@ -62,36 +61,35 @@ cursor-pointer
 const Card = () => {
   return (
     <>
-     <Cards >
-       <Name>
-         <p> Nandi.n </p>
-       </Name>
+      <Cards>
+        <Name>
+          <p> Nandi.n </p>
+        </Name>
 
-       <JobTittle>
-         <p> Software Engineer & Digital Marketing </p> 
-       </JobTittle>
+        <JobTittle>
+          <p> Software Engineer & Digital Marketing </p>
+        </JobTittle>
 
-      <SocialAndContact>
-        <SocialContactImage>
-          <a href="https://github.com/Nandi-exl">
-            <Image src={GithubImg} />
-          </a>
-        </SocialContactImage>
-        <SocialContactImage>
-          <a href="https://www.linkedin.com/in/nandi-naulfaldy-6b0a20143/">
-          <Image src={Linkedin} />
-          </a>
-        </SocialContactImage>
-        <SocialContactImage>
-          <a href="mailto:nandinaufaldi@gmail.com">
-          <Image src={EmailImg} />
-          </a>
-        </SocialContactImage>
-      </SocialAndContact>    
-
-     </Cards>
+        <SocialAndContact>
+          <SocialContactImage>
+            <a href='https://github.com/Nandi-exl'>
+              <Image src={GithubImg} />
+            </a>
+          </SocialContactImage>
+          <SocialContactImage>
+            <a href='https://www.linkedin.com/in/nandi-naulfaldy-6b0a20143/'>
+              <Image src={Linkedin} />
+            </a>
+          </SocialContactImage>
+          <SocialContactImage>
+            <a href='mailto:nandinaufaldi@gmail.com'>
+              <Image src={EmailImg} />
+            </a>
+          </SocialContactImage>
+        </SocialAndContact>
+      </Cards>
     </>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
