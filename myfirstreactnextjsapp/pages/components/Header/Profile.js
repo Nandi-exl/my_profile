@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'tailwind-styled-components';
-import ProfileImg from '../../../Files/profileimg.png';
-import BgImage from '../../../Files/background.PNG';
+import ProfileImg from '../../Files/profileimg.png';
+import BgImage from '../../Files/background.PNG';
 import Image from 'next/image';
 
 import Card from './Card/Card';

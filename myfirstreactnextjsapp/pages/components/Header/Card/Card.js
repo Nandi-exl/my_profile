@@ -2,9 +2,9 @@ import tw from 'tailwind-styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import GithubImg from '../../../../FIles/github-sign.png';
-import Linkedin from '../../../../Files/linkedin.png';
-import EmailImg from '../../../../Files/email.png';
+import GithubImg from '../../../FIles/github-sign.png';
+import Linkedin from '../../../Files/linkedin.png';
+import EmailImg from '../../../Files/email.png';
 
 const Cards = tw.div`
 relative

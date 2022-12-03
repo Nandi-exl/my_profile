@@ -2,10 +2,42 @@ import tw from 'tailwind-styled-components';
 import Slider from 'react-slick';
 import Image from 'next/image';
 
-import arRight from '../../../../../Files/arrow-right.png';
-import arLeft from '../../../../../Files/arrow-left.png';
+import arRight from '../../../../Files/arrow-right.png';
+import arLeft from '../../../../Files/arrow-left.png';
 
-import { SkillsData } from '../../../../../Files/js/SkillsData';
+import JS from '../../../../Files/skillset/Js.png';
+import Next from '../../../../Files/skillset/nextjs.png';
+import Node from '../../../../Files/skillset/node.png';
+import ReactS from '../../../../Files/skillset/react.png';
+import Seo from '../../../../Files/skillset/seo.png';
+import Mysql from '../../../../Files/skillset/Mysql.png';
+
+const SkillsData = [
+  {
+    id: 0,
+    image: JS,
+  },
+  {
+    id: 1,
+    image: Next,
+  },
+  {
+    id: 2,
+    image: Node,
+  },
+  {
+    id: 3,
+    image: ReactS,
+  },
+  {
+    id: 4,
+    image: Seo,
+  },
+  {
+    id: 5,
+    image: Mysql,
+  },
+];
 
 const Container = tw.div`
 flex-col

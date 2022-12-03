@@ -1,15 +1,15 @@
 import tw from 'tailwind-styled-components';
 import Image from 'next/image';
 
-import Kompas from '../../../../../Files/experience/KompasG.png';
-import Rli from '../../../../../Files/experience/Rli.png';
-import Smt from '../../../../../Files/experience/smt.png';
-import Mfk from '../../../../../Files/experience/mfk.png';
-import Bumi from '../../../../../Files/experience/bumi.png';
-import Toffin from '../../../../../Files/experience/toffin.png';
+import Kompas from '../../../../Files/experience/KompasG.png';
+import Rli from '../../../../Files/experience/Rli.png';
+import Smt from '../../../../Files/experience/smt.png';
+import Mfk from '../../../../Files/experience/mfk.png';
+import Bumi from '../../../../Files/experience/bumi.png';
+import Toffin from '../../../../Files/experience/toffin.png';
 
-import arRight from '../../../../../Files/arrow-right.png';
-import arLeft from '../../../../../Files/arrow-left.png';
+import arRight from '../../../../Files/arrow-right.png';
+import arLeft from '../../../../Files/arrow-left.png';
 
 import React, { useState } from 'react';
 import Slider from 'react-slick';

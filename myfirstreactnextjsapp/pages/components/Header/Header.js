@@ -1,7 +1,7 @@
 import React from 'react'
 import tw from 'tailwind-styled-components';
 import Image from 'next/image'
-import bgImage from '../../../Files/background.PNG';
+import bgImage from '../../Files/background.PNG';
 
 const Container = tw.div`
 flex

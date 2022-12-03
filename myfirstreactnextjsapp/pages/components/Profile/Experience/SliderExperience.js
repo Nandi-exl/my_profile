@@ -4,16 +4,16 @@ import Slider from 'react-slick';
 
 import ExpStyles from './SliderExp.module.css';
 
-import arRight from '../../../../Files/arrow-right.png';
-import arLeft from '../../../../Files/arrow-left.png';
+import arRight from '../../../Files/arrow-right.png';
+import arLeft from '../../../Files/arrow-left.png';
 
-import Kompas from '../../../../Files/experience/KompasG.png';
-import Rli from '../../../../Files/experience/Rli.png';
-import Smt from '../../../../Files/experience/smt.png';
-import Mfk from '../../../../Files/experience/mfk.png';
-import Bumi from '../../../../Files/experience/bumi.png';
-import Toffin from '../../../../Files/experience/toffin.png';
-import Prosoulution from '../../../../Files/experience/prosolution.png';
+import Kompas from '../../../Files/experience/KompasG.png';
+import Rli from '../../../Files/experience/Rli.png';
+import Smt from '../../../Files/experience/smt.png';
+import Mfk from '../../../Files/experience/mfk.png';
+import Bumi from '../../../Files/experience/bumi.png';
+import Toffin from '../../../Files/experience/toffin.png';
+import Prosoulution from '../../../Files/experience/prosolution.png';
 
 const Datas = [
   {

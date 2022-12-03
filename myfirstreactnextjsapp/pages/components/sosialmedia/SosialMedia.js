@@ -1,6 +1,6 @@
-import GithubImg from '../../../FIles/github-sign.png';
-import Linkedin from '../../../Files/linkedin.png';
-import EmailImg from '../../../Files/email.png';
+import GithubImg from '../../FIles/github-sign.png';
+import Linkedin from '../../Files/linkedin.png';
+import EmailImg from '../../Files/email.png';
 
 import Image from 'next/image';
 import tw from 'tailwind-styled-components/dist/tailwind';
