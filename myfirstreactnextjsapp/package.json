@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "netlify": "netlify"
+    
   },
   "dependencies": {
     "next": "11.1.2",
