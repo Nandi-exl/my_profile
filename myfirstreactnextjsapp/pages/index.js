@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import Header from './components/Header/Header';
-import Profile from './components/Header/Profile';
+// import Header from './components/Header/Header';
+// import Profile from './components/Header/Profile';
 import tw from 'tailwind-styled-components';
-import Aboutme from './components/Profile/Aboutme.js';
-import Message from './components/message/Message';
-import Mobile from './mobile';
+// import Aboutme from './components/Profile/Aboutme.js';
+// import Message from './components/message/Message';
+// import Mobile from './mobile';
+import Image from 'next/image';
 
 import { useMediaQuery } from 'react-responsive';
 
@@ -48,23 +49,10 @@ export default function Home() {
       <Head>
         <title>My BIo Profile</title>
       </Head>
-
-      <Header />
-      <Profile />
-
-      {isDekstop && (
-        <Container>
-          <ProfileContainer>
-            <Message />
-          </ProfileContainer>
-
-          <AboutMeContainer>
-            <Aboutme />
-          </AboutMeContainer>
-        </Container>
-      )}
-
-      {isMobile && <Mobile />}
+      <p>test</p>
+      <div>
+        <Image src='/1.PNG' alt='ng' width='100px' height='100px' />
+      </div>
     </div>
   );
 }
