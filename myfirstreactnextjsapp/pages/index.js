@@ -1,11 +1,10 @@
 import Head from 'next/head';
-// import Header from './components/Header/Header';
-// import Profile from './components/Header/Profile';
+import Header from './components/Header/Header';
+import Profile from './components/Header/Profile';
 import tw from 'tailwind-styled-components';
-// import Aboutme from './components/Profile/Aboutme.js';
-// import Message from './components/message/Message';
-// import Mobile from './mobile';
-import Image from 'next/image';
+import Aboutme from './components/Profile/Aboutme.js';
+import Message from './components/message/Message';
+import Mobile from './mobile';
 
 import { useMediaQuery } from 'react-responsive';
 
@@ -49,15 +48,23 @@ export default function Home() {
       <Head>
         <title>My BIo Profile</title>
       </Head>
-      <p>test</p>
-      <div>
-        <img
-          src='https://cdn.oneesports.id/cdn-data/sites/2/2022/03/Naruto-Uzumaki.webp'
-          alt='ng'
-          width='100px'
-          height='100px'
-        />
-      </div>
+
+      <Header />
+      <Profile />
+
+      {isDekstop && (
+        <Container>
+          <ProfileContainer>
+            <Message />
+          </ProfileContainer>
+
+          <AboutMeContainer>
+            <Aboutme />
+          </AboutMeContainer>
+        </Container>
+      )}
+
+      {isMobile && <Mobile />}
     </div>
   );
 }
