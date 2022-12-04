@@ -51,7 +51,12 @@ export default function Home() {
       </Head>
       <p>test</p>
       <div>
-        <Image src='/1.PNG' alt='ng' width='100px' height='100px' />
+        <img
+          src='https://cdn.oneesports.id/cdn-data/sites/2/2022/03/Naruto-Uzumaki.webp'
+          alt='ng'
+          width='100px'
+          height='100px'
+        />
       </div>
     </div>
   );
